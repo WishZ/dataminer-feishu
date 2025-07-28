@@ -25,7 +25,7 @@ const HomepageExtract: React.FC<ExtractTypeProps> = (props) => {
         type: 'quickButtons' as const,
         name: 'range_type',
         label: '数据获取范围（页数）',
-        tooltip: '每页8积分，实际扣费会按照获取的页数计算',
+        tooltip: '小红书50积分/页，其他平台10积分/页',
         required: true,
         options: [
           { label: '全量', value: 'all' },
@@ -40,7 +40,7 @@ const HomepageExtract: React.FC<ExtractTypeProps> = (props) => {
         type: 'number' as const,
         name: 'range',
         label: '自定义页数',
-        tooltip: '每页8积分，实际扣费会按照获取的页数计算',
+        tooltip: '小红书50积分/页，其他平台10积分/页',
         suffix: '页',
         min: 1,
         max: 100,
