@@ -1,0 +1,65 @@
+{
+  "code": 200,
+  "message": "Success",
+  "success": true,
+  "data": {
+    "author_info": {
+      "author_id": "6670748999042990083",
+      "avatar_uri": "https://p11.douyinpic.com/aweme/1080x1080/aweme-avatar/tos-cn-i-0813_e111976f32af48ca86024a43ad8057c6.jpeg?from=4010531038",
+      "city": "杭州市",
+      "content_tags": {
+        "影视娱乐": [
+          "影视解说"
+        ]
+      },
+      "core_user_id": "86134965662",
+      "follower": "17522296",
+      "gender": 1,
+      "industry_tags": [],
+      "ink_cnt": "27159011",
+      "is_star": 1,
+      "link_cnt": "47408308",
+      "name": "小侠来了"
+    },
+    "base_resp": {
+      "status_code": 0,
+      "status_message": ""
+    },
+    "video_info": {
+      "collect_cnt": "120106",
+      "comment_cnt": "5656",
+      "create_time": "1744631389",
+      "duration": 2320.161,
+      "finish_rate": 0.0163089216,
+      "head_image_uri": "tos-cn-i-dy/9c27ca9025c74b12ad380f00a41cc60c",
+      "interact_cnt": "572420",
+      "interact_rate": 0.0143,
+      "item_id": "7493134677096615206",
+      "like_cnt": "449875",
+      "music_info": {
+        "album": "",
+        "author": "小侠来了",
+        "cover_uri": "100x100/aweme-avatar/tos-cn-i-0813_e111976f32af48ca86024a43ad8057c6",
+        "cover_url": [
+          "https://p11.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-i-0813_e111976f32af48ca86024a43ad8057c6.jpeg?from=327834062",
+          "https://p26.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-i-0813_e111976f32af48ca86024a43ad8057c6.jpeg?from=327834062",
+          "https://p3.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-i-0813_e111976f32af48ca86024a43ad8057c6.jpeg?from=327834062"
+        ],
+        "create_time": "1744631562",
+        "duration": "2320",
+        "music_id": "7493135328878873359",
+        "play_url": "https://sf5-hl-ali-cdn-tos.douyinstatic.com/obj/ies-music/7493129245801843471.mp3",
+        "source_platform": 0,
+        "title": "@小侠来了创作的原声",
+        "used_count": "0"
+      },
+      "share_cnt": "116889",
+      "title": "一口气40分钟《恶缘》全集解说，好爽的复仇！ #恶缘 #申敏儿 #李光洙 #抖音午夜放映厅  #dou来聊影视",
+      "url": "https://www.iesdouyin.com/share/video/7493134677096615206/?region=CN&mid=7493135328878873359&u_code=126jdf611&did=MS4wLjABAAAANwkJuWIRFOzg5uCpDRpMj4OX-QryoDgn-yYlXQnRwQQ&iid=MS4wLjABAAAANwkJuWIRFOzg5uCpDRpMj4OX-QryoDgn-yYlXQnRwQQ&with_sec_did=1&video_share_track_ver=&titleType=title&share_sign=_9GqyNANDJeaI2DUusJn03R1THqc_CDvY2pzi1j5yRY-&share_version=110200&ts=1752461966&from_aid=1128&from_ssr=1",
+      "video_id": "v0200fg10000cvuf5vvog65ttoqg0jkg",
+      "vv_cnt": "39856151",
+      "formatted_duration": "38:40",
+      "formatted_create_time": "2025-04-14 19:49:49"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+    "code": 200,
+    "message": "Success",
+    "success": true,
+    "data": {
+        "userInfo": {
+            "user": {
+                "id": "6937663462337446914",
+                "shortId": "",
+                "uniqueId": "user1127572592102",
+                "nickname": "藍天",
+                "avatarLarger": "https://p16-common-sign-va.tiktokcdn-us.com/tos-maliva-avt-0068/531a9e97c3d5f84470ae70312c46df63~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=2aa55549&x-expires=1753606800&x-signature=DXPr48MV71xxFGRaLBbl0RWGB54%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+                "avatarMedium": "https://p16-common-sign-va.tiktokcdn-us.com/tos-maliva-avt-0068/531a9e97c3d5f84470ae70312c46df63~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9640&refresh_token=1f5c8c07&x-expires=1753606800&x-signature=aEewDX5Lv9zaQ3uYJDOryV1RuVM%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+                "avatarThumb": "https://p16-common-sign-va.tiktokcdn-us.com/tos-maliva-avt-0068/531a9e97c3d5f84470ae70312c46df63~tplv-tiktokx-cropcenter:100:100.jpeg?dr=9640&refresh_token=daa79e3c&x-expires=1753606800&x-signature=i3abdQZumrIJffmnsRLEGSIQDlA%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+                "signature": "📽️每天持續更新精彩短劇\n😄感謝您關注了我🥰\n👉想學短劇推廣，賺米的請加瀬：love229699\n手機註冊完會有3 💰，記得開通會員；免費看短劇30天",
+                "createTime": 1728740867,
+                "verified": false,
+                "secUid": "MS4wLjABAAAAfA2Pm5JOO7q39L38c0diVm9Vchk5ry_npc05zqnXiCZNFJ3yacug49xZPVqO1-Te",
+                "ftc": false,
+                "relation": 0,
+                "openFavorite": false,
+                "bioLink": {
+                    "link": "https://www.reelshors.com/pages/login/login?inviterType=0&invitation=7XPPKS",
+                    "risk": 3
+                },
+                "commentSetting": 0,
+                "commerceUserInfo": {
+                    "commerceUser": false
+                },
+                "duetSetting": 0,
+                "stitchSetting": 0,
+                "privateAccount": false,
+                "secret": false,
+                "isADVirtual": false,
+                "roomId": "",
+                "uniqueIdModifyTime": 0,
+                "ttSeller": false,
+                "downloadSetting": 0,
+                "profileTab": {
+                    "showMusicTab": false,
+                    "showQuestionTab": false,
+                    "showPlayListTab": false
+                },
+                "followingVisibility": 1,
+                "recommendReason": "",
+                "nowInvitationCardUrl": "",
+                "nickNameModifyTime": 1728740959,
+                "isEmbedBanned": false,
+                "canExpPlaylist": true,
+                "profileEmbedPermission": 1,
+                "language": "zh-Hant",
+                "eventList": [],
+                "suggestAccountBind": false,
+                "isOrganization": 0,
+                "UserStoryStatus": 0
+            },
+            "stats": {
+                "followerCount": 13100,
+                "followingCount": 3,
+                "heart": 454000,
+                "heartCount": 454000,
+                "videoCount": 258,
+                "diggCount": 0,
+                "friendCount": 0
+            },
+            "statsV2": {
+                "followerCount": "13092",
+                "followingCount": "3",
+                "heart": "454032",
+                "heartCount": "454032",
+                "videoCount": "258",
+                "diggCount": "0",
+                "friendCount": "0"
+            },
+            "itemList": []
+        },
+        "shareMeta": {
+            "title": "藍天 on TikTok",
+            "desc": "@user1127572592102 13.1k Followers, 3 Following, 454.0k Likes - Watch awesome short videos created by 藍天"
+        },
+        "statusCode": 0,
+        "statusMsg": "",
+        "needFix": false
+    }
+}
