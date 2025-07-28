@@ -1,0 +1,293 @@
+{
+  "code": 200,
+  "message": "success",
+  "success": true,
+  "data": {
+    "result": 1,
+    "counts": {
+      "fanCount": 674163,
+      "followCount": 490,
+      "collectionCount": 6907,
+      "photoCount": 3357
+    },
+    "photo": {
+      "singlePicture": false,
+      "type": 1,
+      "manifest": {
+        "playInfo": {
+          "bizType": 0,
+          "cdnTimeRangeLevel": 0
+        },
+        "audioFeature": {
+          "musicProbability": 0.4479,
+          "dialogProbability": 0.5012,
+          "stereophonicRichness": 98.198,
+          "audioClip": 0.0092,
+          "effectiveBandwidthInHz": 14326.054,
+          "backgroundSoundProbability": 0.0509,
+          "audioSnr": 2.8375,
+          "audioQuality": 81.9043
+        },
+        "manualDefaultSelect": false,
+        "videoFeature": {
+          "mosScore": 0.5498046875,
+          "blurProbability": 0.20048828423023224,
+          "blockyProbability": 0.518941342830658,
+          "avgEntropy": 11.541279649734497
+        },
+        "stereoType": 0,
+        "adaptationSet": [
+          {
+            "duration": 198766,
+            "id": 1,
+            "representation": [
+              {
+                "m3u8Slice": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:8\n#EXT-X-MEDIA-SEQUENCE:0\n#EXTINF:8.333333,\nhttps://v4-vod.kwaicdn.com/bs3/video-hls/5219390655913536520_aded44a6c2efa067_5591_hlsb.00000.ts?ftt=R&kwai-not-alloc=35&pkey=AAXPe77xhdo1yzivyQbr0Qk4Xi-5ReUW80tOI2wXfTCqHr9tpenXuzz4z38T4XqHpNph1OnS-N9kjXyriYcf3ShD7CZT97-IlsA4y_YfzwMr0g9ssoK0XJOQYK8izKtADPA&ss=vpm\n",
+                "hidden": false,
+                "backupUrl": [
+                  "https://v2-vod.kwaicdn.com/bs3/video-hls/5219390655913536520_aded44a6c2efa067_5591_hlsb.m3u8?ftt=R&kwai-not-alloc=35&pkey=AAUL5opHdj02VJvVEXuFVVh7lnmtKa_ehIKXOeriUkzoZYgyH-vQOAPTAEgVZdsCEWFnoWF4JUAvTz3ow5ro-pwyjBDuo7wLM4pxJrEAxEb3aEQSbuHH3M4RuPAtEuty6i0&ss=vpm"
+                ],
+                "normalizeGain": 0,
+                "maxBitrate": 1332,
+                "hdrType": 0,
+                "frameRate": 30,
+                "qualityLabel": "高清",
+                "oriLoudness": 0,
+                "id": 1,
+                "kvqScore": {
+                  "FRPost": -1,
+                  "NR": -1,
+                  "NRPost": -1,
+                  "FR": -1
+                },
+                "disableAdaptive": false,
+                "realNormalizeGain": 1,
+                "videoCodec": "avc",
+                "height": 1280,
+                "avgBitrate": 1219,
+                "codecs": "",
+                "defaultSelect": false,
+                "mute": false,
+                "url": "https://v4-vod.kwaicdn.com/bs3/video-hls/5219390655913536520_aded44a6c2efa067_5591_hlsb.m3u8?ftt=R&kwai-not-alloc=35&pkey=AAUDieGolNokHfFVrLeOI5T4T4DURIazF6vzkKwe8aULyNnfztqFDzQ7H3OkGBt9BJC_hBoR0VzwtBFs8IVTKRRZ446WXUBgMqltvxiQjBgDBWD0ERePydktZRNXg9qcit4&ss=vpm",
+                "p2spCode": "{\"fRsn\":0,\"fixOpt\":-1,\"schTask\":\"\",\"schCode\":-1,\"schRes\":\"\",\"pushTask\":\"v=0&p=0&s=0&d=0\",\"pushCode\":-1}",
+                "quality": 1.5,
+                "featureP2sp": false,
+                "makeupGain": 0,
+                "realLoudness": -10.897,
+                "width": 720,
+                "comment": "videoId=aded44a6c2efa067/ttExplain=AVC_VeryFast_720P_高码率_Basic/tt=hlsb",
+                "qualityType": "720p",
+                "minorInfo": "-b1f1",
+                "agc": false
+              },
+              {
+                "m3u8Slice": "#EXTM3U\n#EXT-X-VERSION:7\n#EXT-X-TARGETDURATION:5\n#EXT-X-MEDIA-SEQUENCE:0\n#EXT-X-MAP:URI=\"https://v4-vod.kwaicdn.com/bs3/video-hls/5219390655913536520_aded44a6c2efa067_9149_hlsfhd15.00000.m4s?ftt=R&kwai-not-alloc=35&pkey=AAXzy8sc1tdbdWk4H7mO_RUU_CM4B4VC1nfFPW09_R-fQFi2_mHmpnxlNDtZGTTkcDS1FKaLP1JMszAa2uzvFWccluPl1yD6Tlng1BISDBdNDBBqB5GxBmo2MXN-XGYkD5M&ss=vpm\",BYTERANGE=\"1578@0\"\n#EXTINF:5.0,\n#EXT-X-BYTERANGE:460918@1578\nhttps://v4-vod.kwaicdn.com/bs3/video-hls/5219390655913536520_aded44a6c2efa067_9149_hlsfhd15.00000.m4s?ftt=R&kwai-not-alloc=35&pkey=AAXzy8sc1tdbdWk4H7mO_RUU_CM4B4VC1nfFPW09_R-fQFi2_mHmpnxlNDtZGTTkcDS1FKaLP1JMszAa2uzvFWccluPl1yD6Tlng1BISDBdNDBBqB5GxBmo2MXN-XGYkD5M&ss=vpm\n",
+                "hidden": false,
+                "backupUrl": [
+                  "https://v2-vod.kwaicdn.com/bs3/video-hls/5219390655913536520_aded44a6c2efa067_9149_hlsfhd15.m3u8?ftt=R&kwai-not-alloc=35&pkey=AAVqsOMYQNZhysjVnCrYGkI-7mDi4S39STees-idBbvAC87a4eaYMB8j6aJPoqPsvFdidVfTPzKQF9EX-cXlIrZ0UYbpmB9IQm9mSK1kwLIScATZS3WRCi2DG5yJ2McNPhs&ss=vpm"
+                ],
+                "normalizeGain": 1,
+                "maxBitrate": 837,
+                "hdrType": 0,
+                "frameRate": 30.000101,
+                "qualityLabel": "高清",
+                "oriLoudness": -11.171,
+                "id": 2,
+                "kvqScore": {
+                  "FRPost": -1,
+                  "NR": 2.8466,
+                  "NRPost": -1,
+                  "blur": 0.3108,
+                  "sharpness": 0.3318,
+                  "FR": -1,
+                  "kvqVersion": "v7"
+                },
+                "disableAdaptive": false,
+                "realNormalizeGain": 1,
+                "videoCodec": "hevc",
+                "height": 1280,
+                "avgBitrate": 769,
+                "codecs": "",
+                "defaultSelect": false,
+                "mute": false,
+                "url": "https://v4-vod.kwaicdn.com/bs3/video-hls/5219390655913536520_aded44a6c2efa067_9149_hlsfhd15.m3u8?ftt=R&kwai-not-alloc=35&pkey=AAUJbyyHHQPezdy6gzCRZ-FRcab05Y7HxBaTGqIgL6Ys1x8WGtIQPpJBv52JT3YjRRLJJ0eL1T7r8X610OAecSE_RLXJOKuab0yxbn8YA-MENi3O2lS2p67nU-FPJS_4p0o&ss=vpm",
+                "p2spCode": "{\"fRsn\":0,\"fixOpt\":-1,\"schTask\":\"\",\"schCode\":-1,\"schRes\":\"\",\"pushTask\":\"v=0&p=0&s=0&d=0\",\"pushCode\":-1}",
+                "quality": 1.5,
+                "featureP2sp": false,
+                "makeupGain": 1.144,
+                "realLoudness": -10.782,
+                "width": 720,
+                "comment": "videoId=aded44a6c2efa067/ttExplain=HEVC_Turbo2_720P_高码率/tt=hlsfhd15",
+                "qualityType": "720p",
+                "minorInfo": "-b1f1",
+                "agc": true
+              }
+            ]
+          }
+        ],
+        "mediaType": 1,
+        "videoId": "aded44a6c2efa067",
+        "hideAuto": false,
+        "businessType": 1,
+        "version": "2.0.0"
+      },
+      "duration": 198766,
+      "timestamp": 1745451446091,
+      "userName": "甜妹影视",
+      "userId": 2920927400,
+      "likeCount": 143740,
+      "width": 720,
+      "height": 1280,
+      "mainMvUrls": [
+        {
+          "cdn": "alimov2.a.kwimgs.com",
+          "url": "https://alimov2.a.kwimgs.com/upic/2025/04/24/07/BMjAyNTA0MjQwNzM2NTZfMjkyMDkyNzQwMF8xNjI0OTYxNDg0ODlfMl8z_b_Bdf6c6b10f563bafb9ba9dd0e31b68381.mp4?clientCacheKey=3xiswqrx65uvzs2_b.mp4&tt=b&di=6f0af2dc&bp=10000"
+        },
+        {
+          "cdn": "alimov2.a.kwimgs.com",
+          "url": "https://alimov2.a.kwimgs.com/upic/2025/04/24/07/BMjAyNTA0MjQwNzM2NTZfMjkyMDkyNzQwMF8xNjI0OTYxNDg0ODlfMl8z_b_Bdf6c6b10f563bafb9ba9dd0e31b68381.mp4?clientCacheKey=3xiswqrx65uvzs2_b.mp4&tt=b&di=6f0af2dc&bp=10000"
+        }
+      ],
+      "commentCount": 17667,
+      "forwardCount": 0,
+      "viewCount": 3827926,
+      "shareCount": 1412,
+      "coverUrls": [
+        {
+          "cdn": "p3.a.yximgs.com",
+          "url": "https://p3.a.yximgs.com/upic/2025/04/24/07/BMjAyNTA0MjQwNzM2NTZfMjkyMDkyNzQwMF8xNjI0OTYxNDg0ODlfMl8z_B683057905d98ffcd67431fa74dd5417c.jpg?clientCacheKey=3xiswqrx65uvzs2.jpg&di=6f0af2dc&bp=10000"
+        },
+        {
+          "cdn": "p2.a.yximgs.com",
+          "url": "https://p2.a.yximgs.com/upic/2025/04/24/07/BMjAyNTA0MjQwNzM2NTZfMjkyMDkyNzQwMF8xNjI0OTYxNDg0ODlfMl8z_B683057905d98ffcd67431fa74dd5417c.jpg?clientCacheKey=3xiswqrx65uvzs2.jpg&di=6f0af2dc&bp=10000"
+        }
+      ],
+      "webpCoverUrls": [
+        {
+          "cdn": "p3.a.yximgs.com",
+          "url": "https://p3.a.yximgs.com/upic/2025/04/24/07/BMjAyNTA0MjQwNzM2NTZfMjkyMDkyNzQwMF8xNjI0OTYxNDg0ODlfMl8z_B683057905d98ffcd67431fa74dd5417c.jpg?clientCacheKey=3xiswqrx65uvzs2.jpg&di=6f0af2dc&bp=10000"
+        },
+        {
+          "cdn": "p2.a.yximgs.com",
+          "url": "https://p2.a.yximgs.com/upic/2025/04/24/07/BMjAyNTA0MjQwNzM2NTZfMjkyMDkyNzQwMF8xNjI0OTYxNDg0ODlfMl8z_B683057905d98ffcd67431fa74dd5417c.jpg?clientCacheKey=3xiswqrx65uvzs2.jpg&di=6f0af2dc&bp=10000"
+        }
+      ],
+      "headUrls": [
+        {
+          "cdn": "p2-pro.a.yximgs.com",
+          "url": "https://p2-pro.a.yximgs.com/uhead/AB/2025/04/24/22/BMjAyNTA0MjQyMjUwNTBfMjkyMDkyNzQwMF8yX2hkOTZfNTc4_s.jpg"
+        },
+        {
+          "cdn": "p1-pro.a.yximgs.com",
+          "url": "https://p1-pro.a.yximgs.com/uhead/AB/2025/04/24/22/BMjAyNTA0MjQyMjUwNTBfMjkyMDkyNzQwMF8yX2hkOTZfNTc4_s.jpg"
+        }
+      ],
+      "verified": false,
+      "soundTrack": {
+        "name": "甜妹影视的作品原声",
+        "avatarUrls": [
+          {
+            "cdn": "ali2.a.yximgs.com",
+            "url": "https://ali2.a.yximgs.com/bs2/ost/MTYyNDk2MTQ4NDg5XzI5MjA5Mjc0MDA.jpg"
+          },
+          {
+            "cdn": "hw.a.yximgs.com",
+            "url": "https://hw.a.yximgs.com/bs2/ost/MTYyNDk2MTQ4NDg5XzI5MjA5Mjc0MDA.jpg"
+          }
+        ],
+        "photoId": 5219390655913537000,
+        "user": {
+          "following": false,
+          "user_name": "甜妹影视",
+          "user_id": 2920927400,
+          "headurl": "https://p2-pro.a.yximgs.com/uhead/AB/2025/04/24/22/BMjAyNTA0MjQyMjUwNTBfMjkyMDkyNzQwMF8yX2hkOTZfNTc4_s.jpg",
+          "user_sex": "F",
+          "eid": "3xtekzuhbzuaez6",
+          "headurls": [
+            {
+              "cdn": "p2-pro.a.yximgs.com",
+              "url": "https://p2-pro.a.yximgs.com/uhead/AB/2025/04/24/22/BMjAyNTA0MjQyMjUwNTBfMjkyMDkyNzQwMF8yX2hkOTZfNTc4_s.jpg"
+            },
+            {
+              "cdn": "p1-pro.a.yximgs.com",
+              "url": "https://p1-pro.a.yximgs.com/uhead/AB/2025/04/24/22/BMjAyNTA0MjQyMjUwNTBfMjkyMDkyNzQwMF8yX2hkOTZfNTc4_s.jpg"
+            }
+          ],
+          "visitorBeFollowed": false
+        },
+        "artist": "甜妹影视",
+        "audioUrls": [
+          {
+            "cdn": "ali2.a.yximgs.com",
+            "url": "https://ali2.a.yximgs.com/bs2/ost/MTYyNDk2MTQ4NDg5XzI5MjA5Mjc0MDA.m4a"
+          },
+          {
+            "cdn": "hw.a.yximgs.com",
+            "url": "https://hw.a.yximgs.com/bs2/ost/MTYyNDk2MTQ4NDg5XzI5MjA5Mjc0MDA.m4a"
+          }
+        ],
+        "imageUrls": [
+          {
+            "cdn": "hw.a.yximgs.com",
+            "url": "https://hw.a.yximgs.com/bs2/ost/MTYyNDk2MTQ4NDg5XzI5MjA5Mjc0MDA.jpg"
+          },
+          {
+            "cdn": "ali2.a.yximgs.com",
+            "url": "https://ali2.a.yximgs.com/bs2/ost/MTYyNDk2MTQ4NDg5XzI5MjA5Mjc0MDA.jpg"
+          }
+        ],
+        "id": 23995221344,
+        "type": 9,
+        "loudness": -15,
+        "finalStatus": 0,
+        "genreId": 0,
+        "usageCount": 1,
+        "photoCount": 1,
+        "audioType": 1,
+        "isOffline": false,
+        "hasCopyright": true,
+        "disableEnhancedEntry": true
+      },
+      "tagShow": {
+        "bizId": "5x3fybpgbrnr58q",
+        "bannerType": 2,
+        "usedCount": "1",
+        "type": 3
+      },
+      "commentShowType": 2,
+      "headUrl": "https://p2-pro.a.yximgs.com/uhead/AB/2025/04/24/22/BMjAyNTA0MjQyMjUwNTBfMjkyMDkyNzQwMF8yX2hkOTZfNTc4_s.jpg",
+      "userSex": "F",
+      "ext_params": {
+        "mtype": 3,
+        "color": "030709",
+        "w": 720,
+        "sound": 198762,
+        "h": 1280,
+        "interval": 30,
+        "video": 198766
+      },
+      "serverExpTag": "feed_photo|5219390655913536520|2920927400|1_a/2004815918537077906_s0",
+      "caption": "#快嘴唠唠剧 #黄金背后",
+      "exp_tag": "1_a/2004815918537077906_s0",
+      "photoType": "VIDEO",
+      "photoId": "5219390655913536520",
+      "share_info": "userId=3xtekzuhbzuaez6&photoId=3xiswqrx65uvzs2",
+      "sameFrame": {
+        "allow": true,
+        "availableDepth": 7
+      },
+      "adminTags": [],
+      "userEid": "3xtekzuhbzuaez6",
+      "photoStatus": 0,
+      "forcePublic": "H4sIAAAAAAAA%2F%2BNQEmCQ6Hwxc81dFgDzr9dgCwAAAA%3D%3D"
+    },
+    "serialInfo": {
+      "valid": false,
+      "title": null,
+      "msg": null,
+      "serialId": null,
+      "serialType": null,
+      "show": false
+    }
+  }
+}
