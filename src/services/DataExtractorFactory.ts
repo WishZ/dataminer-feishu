@@ -6,11 +6,14 @@ import { DouyinHomepageExtractor } from './extractors/homepage/DouyinHomepageExt
 import { TiktokHomepageExtractor } from './extractors/homepage/TiktokHomepageExtractor';
 import { YoutubeHomepageExtractor } from './extractors/homepage/YoutubeHomepageExtractor';
 
-// 评论提取器
+// 详情提取器
 import { DouyinDetailsExtractor } from './extractors/details/DouyinDetailsExtractor';
 import { KuaishouDetailsExtractor } from './extractors/details/KuaishouDetailsExtractor';
 import { TiktokDetailsExtractor } from './extractors/details/TiktokDetailsExtractor';
 import { YoutubeDetailsExtractor } from './extractors/details/YoutubeDetailsExtractor';
+import { XhsDetailsExtractor } from './extractors/details/XhsDetailsExtractor';
+
+// 评论提取器
 import { KuaishouCommentsExtractor } from './extractors/comments/KuaishouCommentsExtractor';
 import { DouyinCommentsExtractor } from './extractors/comments/DouyinCommentsExtractor';
 
@@ -47,6 +50,8 @@ export class DataExtractorFactory {
   
   private static createDetailsExtractor(platform: Platform, options: ExtractOptions): IDataExtractor {
     switch (platform) {
+      case 'xhs':
+        return new XhsDetailsExtractor(options);
       case 'douyin':
         return new DouyinDetailsExtractor(options);
       case 'kuaishou':
