@@ -1,0 +1,30 @@
+name = "dataminer-feishu"
+main = "worker/index.js"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[build]
+command = "npm run build:worker"
+cwd = "."
+watch_dir = ["src", "worker"]
+
+[env.production]
+name = "dataminer-feishu-prod"
+
+[env.staging]
+name = "dataminer-feishu-staging"
+
+# Environment variables (set these using wrangler secret put)
+# SNAPPDOWN_API_BASE_URL = "https://data.snappdown.com/api"
+
+# KV namespace for caching (optional)
+# [[kv_namespaces]]
+# binding = "CACHE"
+# id = "your-kv-namespace-id"
+# preview_id = "your-preview-kv-namespace-id"
+
+# Custom domains (configure after deployment)
+# [env.production]
+# routes = [
+#   { pattern = "dataminer.yourdomain.com/*", zone_name = "yourdomain.com" }
+# ]

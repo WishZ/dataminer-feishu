@@ -96,7 +96,7 @@ export class PlatformDetector {
 
 // 基础平台提取器
 export abstract class BasePlatformExtractor implements IDataExtractor {
-  protected baseUrl = 'https://data.snappdown.com/api';
+  protected baseUrl = '/api';
   protected abstract platform: Platform;
   protected abstract extractType: string;
   protected options: ExtractOptions;

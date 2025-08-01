@@ -55,7 +55,7 @@ export class ProxyUtils {
     const expire = Math.floor(Date.now() / 1000) + expireAdd;
     const signature = await this.generateSignature(url, expire);
 
-    const baseUrl = "https://snappdown.com/api/proxy/media?";
+    const baseUrl = "/api/proxy/media?";
     const params = new URLSearchParams();
 
     params.append("url", url);
@@ -85,7 +85,7 @@ export class ProxyUtils {
     const expire = Math.floor(Date.now() / 1000) + expireAdd;
     const signature = await this.generateSignature(url, expire);
 
-    const baseUrl = "https://data.snappdown.com/api/download/proxy?";
+    const baseUrl = "/api/download/proxy?";
     const params = new URLSearchParams();
     params.append("url", url);
     params.append("signature", signature);
@@ -152,7 +152,7 @@ export class ProxyUtils {
     }
 
     // 检查是否已经是代理URL
-    if (url.includes("snappdown.com/api/proxy/media")) {
+    if (url.includes("/api/proxy/media") || url.includes("snappdown.com/api/proxy/media")) {
       return false;
     }
 
