@@ -65,7 +65,7 @@ export class XhsDetailsExtractor extends BasePlatformExtractor {
   }
 
   protected getApiEndpoint(): string {
-    return '/xhs/note/detail';
+    return '/xhs/note/info';
   }
 
   protected getTypeDisplayName(): string {
@@ -98,25 +98,11 @@ export class XhsDetailsExtractor extends BasePlatformExtractor {
         作者ID: user.id || user.userid || '',
         作者昵称: user.name || user.nickname || '',
         作者头像: await this.getProxyUrl(user.image),
-        是否关注: user.followed || false,
 
         // 统计数据
         点赞数: (note.liked_count || 0).toLocaleString(),
         收藏数: (note.collected_count || 0).toLocaleString(),
         评论数: (note.comments_count || 0).toLocaleString(),
-        浏览数: (note.view_count || 0).toLocaleString(),
-        是否点赞: note.liked || false,
-        是否收藏: note.collected || false,
-        是否置顶: note.sticky || false,
-
-        // 分享信息
-        分享链接: note.share_info?.link || '',
-        分享标题: note.share_info?.title || '',
-        分享内容: note.share_info?.content || '',
-
-        // 媒体保存配置
-        禁止保存: note.media_save_config?.disable_save || false,
-        禁止水印: note.media_save_config?.disable_watermark || false,
 
         提取时间: Date.now(),
       };
@@ -133,8 +119,17 @@ export class XhsDetailsExtractor extends BasePlatformExtractor {
 
       // 处理视频信息（如果有）
       if (note.video && Object.keys(note.video).length > 0) {
-        // 小红书视频信息处理（根据实际数据结构调整）
-        baseData['视频信息'] = JSON.stringify(note.video);
+        const video = note.video;
+
+        // 视频基础信息
+        if (video.width && video.height) {
+          baseData['视频尺寸'] = `${video.width}x${video.height}`;
+        }
+
+        // 视频链接（通过代理）
+        if (video.link) {
+          baseData['视频链接'] = await this.getProxyUrl(video.link);
+        }
       }
 
       formattedItems.push(baseData);
