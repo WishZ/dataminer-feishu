@@ -20,31 +20,70 @@ export class XhsDetailsExtractor extends BasePlatformExtractor {
 
       reportProgress(0, '开始提取笔记详情...');
 
-      // 构建请求负载
-      const payload = {
-        url: url.trim(),
-      };
+      // 解析多行URL
+      const urls = url.split('\n')
+        .map(u => u.trim())
+        .filter(u => u.length > 0);
 
-      const endpoint = this.getApiEndpoint();
-      const result = await this.makeRequest(endpoint, payload);
-
-      // 检查响应数据结构
-      if (!result.data) {
-        throw new Error('笔记详情数据结构异常');
+      if (urls.length === 0) {
+        throw new Error('未找到有效的URL');
       }
 
-      reportProgress(50, '正在格式化数据...');
-      const formattedData = await this.formatData([result.data]);
+      reportProgress(5, `发现 ${urls.length} 个URL，开始批量提取...`);
 
-      reportProgress(100, '笔记详情提取完成');
+      const allFormattedData = [];
+      const endpoint = this.getApiEndpoint();
+
+      // 循环处理每个URL
+      for (let i = 0; i < urls.length; i++) {
+        const currentUrl = urls[i];
+        const progress = 10 + (i / urls.length) * 80; // 10-90%的进度用于URL处理
+
+        try {
+          reportProgress(progress, `正在提取第 ${i + 1}/${urls.length} 个笔记`);
+
+          // 构建请求负载
+          const payload = {
+            url: currentUrl,
+          };
+
+          const result = await this.makeRequest(endpoint, payload);
+
+          // 检查响应数据结构
+          if (result.data) {
+            const formattedData = await this.formatData([result.data]);
+            allFormattedData.push(...formattedData);
+          } else {
+            console.warn(`URL ${currentUrl} 返回数据结构异常，跳过`);
+          }
+
+          // 添加小延迟避免请求过快
+          if (i < urls.length - 1) {
+            await new Promise(resolve => setTimeout(resolve, 100));
+          }
+
+        } catch (error) {
+          console.error(`提取URL ${currentUrl} 失败:`, error);
+          // 继续处理下一个URL，不中断整个流程
+          continue;
+        }
+      }
+
+      reportProgress(95, '正在整理数据...');
+
+      if (allFormattedData.length === 0) {
+        throw new Error('所有URL都提取失败，请检查URL格式或网络连接');
+      }
+
+      reportProgress(100, `笔记详情提取完成，成功提取 ${allFormattedData.length} 条数据`);
 
       return {
         success: true,
-        data: formattedData,
-        totalCount: 1,
+        data: allFormattedData,
+        totalCount: allFormattedData.length,
         platform: '小红书',
         extractType: this.extractType,
-        message: '小红书笔记详情提取成功',
+        message: `小红书笔记详情提取成功，共提取 ${allFormattedData.length} 条数据`,
       };
     } catch (error) {
       if (error instanceof InsufficientCreditsError) {
