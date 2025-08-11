@@ -1,4 +1,3 @@
-import { formatTimestamp } from '../../../lib/utils';
 import { BasePlatformExtractor, Platform, ExtractOptions, ExtractResult, InsufficientCreditsError } from '../../DataExtractor';
 import { ProxyUtils } from '../../../lib/ProxyUtils';
 
@@ -30,12 +29,12 @@ export class XhsDetailsExtractor extends BasePlatformExtractor {
       const result = await this.makeRequest(endpoint, payload);
 
       // 检查响应数据结构
-      if (!result.data?.data || !Array.isArray(result.data.data) || result.data.data.length === 0) {
+      if (!result.data) {
         throw new Error('笔记详情数据结构异常');
       }
 
       reportProgress(50, '正在格式化数据...');
-      const formattedData = await this.formatData(result.data.data);
+      const formattedData = await this.formatData([result.data]);
 
       reportProgress(100, '笔记详情提取完成');
 
@@ -65,7 +64,7 @@ export class XhsDetailsExtractor extends BasePlatformExtractor {
   }
 
   protected getApiEndpoint(): string {
-    return '/xhs/note/info';
+    return '/xhs/note/info/v2';
   }
 
   protected getTypeDisplayName(): string {
@@ -75,45 +74,38 @@ export class XhsDetailsExtractor extends BasePlatformExtractor {
   protected async formatData(dataList: any[]): Promise<any[]> {
     const formattedItems = [];
 
-    for (const data of dataList) {
-      // 获取笔记列表中的第一个笔记
-      const noteList = data.note_list;
-      if (!noteList || !Array.isArray(noteList) || noteList.length === 0) {
-        continue;
-      }
-
-      const note = noteList[0];
-      const user = note.user || data.user;
+    for (const note of dataList) {
+      // 新接口直接返回笔记数据
+      const author = note.author;
 
       // 基础信息
       const baseData: any = {
         平台: '小红书',
-        笔记ID: note.id || '',
+        笔记ID: note.noteId || '',
         标题: note.title || '',
-        描述: note.desc || '',
-        发布时间: formatTimestamp(note.time), // 小红书时间戳是秒
-        笔记类型: note.type || '',
-
+        内容: note.content || '',
+        笔记链接: note.noteLink || '',
+        发布时间: note.createDate || '',
+        笔记类型: note.noteType == 2 ? '视频' : '普通',
         // 作者信息
-        作者ID: user.id || user.userid || '',
-        作者昵称: user.name || user.nickname || '',
-        作者头像: await this.getProxyUrl(user.image),
+        作者ID: author?.userId || '',
+        作者昵称: author?.nickname || '',
+        作者头像: author?.userSImage || '',
 
         // 统计数据
-        点赞数: (note.liked_count || 0).toLocaleString(),
-        收藏数: (note.collected_count || 0).toLocaleString(),
-        评论数: (note.comments_count || 0).toLocaleString(),
+        点赞数: note.likeNum || '0',
+        收藏数: note.favNum || '0',
+        评论数: note.cmtNum || '0',
 
         提取时间: Date.now(),
       };
 
       // 处理图片列表
-      if (note.images_list && Array.isArray(note.images_list)) {
-        for (let i = 0; i < note.images_list.length; i++) {
-          const image = note.images_list[i];
-          const imageUrl = await this.getProxyUrl(image.url || image.original);
+      if (note.images && Array.isArray(note.images)) {
+        for (let i = 0; i < note.images.length; i++) {
+          const image = note.images[i];
+          const imageUrl =image.link;
           baseData[`图片${i + 1}`] = imageUrl;
-          baseData[`图片${i + 1}_尺寸`] = `${image.width}x${image.height}`;
         }
       }
 
@@ -121,14 +113,9 @@ export class XhsDetailsExtractor extends BasePlatformExtractor {
       if (note.video && Object.keys(note.video).length > 0) {
         const video = note.video;
 
-        // 视频基础信息
-        if (video.width && video.height) {
-          baseData['视频尺寸'] = `${video.width}x${video.height}`;
-        }
-
         // 视频链接（通过代理）
         if (video.link) {
-          baseData['视频链接'] = await this.getProxyUrl(video.link);
+          baseData['视频链接'] = video.link;
         }
       }
 
@@ -138,17 +125,4 @@ export class XhsDetailsExtractor extends BasePlatformExtractor {
     return formattedItems;
   }
 
-  // 获取代理URL
-  private async getProxyUrl(url: string): Promise<string> {
-    if (!url || typeof url !== 'string') {
-      return '';
-    }
-
-    try {
-      return await ProxyUtils.smartProxyUrl(url, 'xhs');
-    } catch (error) {
-      console.error(`生成代理URL失败: ${url}`, error);
-      return url; // 失败时返回原始URL
-    }
-  }
 }
