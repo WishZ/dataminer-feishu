@@ -3,110 +3,31 @@
     "message": "Success",
     "success": true,
     "data": {
-        "code": 0,
-        "data": [
+        "content": "第一次赶海🤩真的太太太有趣了\n跟着当地经常赶海的姐姐🧍‍♀️学习挖沙找小海鲜🐚虽然收获不多，但过程超治愈～\n赶海小tips📒\n✅ 耐心是关键，蹲下来仔细观察\n✅ 工具不用太多，小钉耙+桶就够\n赶海只有0次和无数次，果然是真的！\n改天还要来，下次一定要挖到大货🦀\n指路📍荣城市辰翔水产养殖场\n#我的日常  #记录生活  #日常碎片  #一起去赶海  #赶海  #赶海收获 ",
+        "title": "威海赶海初体验🌊挖到快乐比海鲜多～",
+        "noteLink": "https://www.xiaohongshu.com/explore/688d87070000000025024af9?xsec_token=ZBQFnsPwGyddclueEzjqtcFcEBh-cMFrx1hQExT3kpvBg=&xsec_source=pc_ad",
+        "noteType": "2",
+        "images": [
             {
-                "track_id": "",
-                "user": {
-                    "id": "6275dd6b000000001000c833",
-                    "name": "蔚时",
-                    "image": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31hg58fhj386g5ojlrllk1i1jcsb3kvo?imageView2/2/w/80/format/jpg",
-                    "followed": false,
-                    "nickname": "蔚时",
-                    "userid": "6275dd6b000000001000c833"
-                },
-                "note_list": [
-                    {
-                        "track_id": "",
-                        "model_type": "note",
-                        "id": "68183769000000002301d33a",
-                        "type": "note",
-                        "title": "618抄作业！2025年养猫囤货清单来袭",
-                        "desc": "感觉今年618来的好快啊！写了一下我家猫平常回购最多养猫好物，涵盖猫粮冻干、罐头、猫砂等。不知道今年会不会上，大家都准备冲哪个呀？\n大家有做功课的也可以分享一下哦！\n\t\n﻿#618猫粮 ﻿ ﻿#618猫粮攻略 ﻿ ﻿#猫粮 ﻿ ﻿#猫粮推荐 ﻿ ﻿#囤货 ﻿ ﻿#618养猫 ﻿ ﻿#新手养猫 ﻿",
-                        "images_list": [
-                            {
-                                "fileid": "jp",
-                                "height": 2054,
-                                "width": 1155,
-                                "url": "http://ci.xiaohongshu.com/spectrum/1040g0k031h3avpbd38005ojlrllk1i1jhn2krp0?imageView2/2/w/1080/format/jpg",
-                                "original": "http://ci.xiaohongshu.com/spectrum/1040g0k031h3avpbd38005ojlrllk1i1jhn2krp0?imageView2/2/w/1080/format/jpg",
-                                "trace_id": "jp",
-                                "need_load_original_image": false
-                            },
-                            {
-                                "fileid": "jp",
-                                "height": 2143,
-                                "width": 1205,
-                                "url": "http://ci.xiaohongshu.com/spectrum/1040g0k031h3avpbd380g5ojlrllk1i1jg69o7og?imageView2/2/w/1080/format/jpg",
-                                "original": "http://ci.xiaohongshu.com/spectrum/1040g0k031h3avpbd380g5ojlrllk1i1jg69o7og?imageView2/2/w/1080/format/jpg",
-                                "trace_id": "jp",
-                                "need_load_original_image": false
-                            }
-                        ],
-                        "user": {
-                            "id": "6275dd6b000000001000c833",
-                            "name": "蔚时",
-                            "image": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31hg58fhj386g5ojlrllk1i1jcsb3kvo?imageView2/2/w/80/format/jpg",
-                            "followed": false,
-                            "nickname": "蔚时",
-                            "userid": "6275dd6b000000001000c833"
-                        },
-                        "time": 1746374400,
-                        "last_update_time": 0,
-                        "liked": false,
-                        "liked_count": 499,
-                        "collected": false,
-                        "collected_count": 342,
-                        "comments_count": 20,
-                        "sticky": false,
-                        "share_info": {
-                            "content": "感觉今年618来的好快啊！写了一下我家猫平常回购最多养猫好物，涵盖猫粮冻干、罐头、猫砂等。不知道今年会不会上，大家都准备",
-                            "image": {
-                                "fileid": "jp",
-                                "height": 2054,
-                                "width": 1155,
-                                "url": "http://ci.xiaohongshu.com/spectrum/1040g0k031h3avpbd38005ojlrllk1i1jhn2krp0?imageView2/2/w/1080/format/jpg",
-                                "original": "http://ci.xiaohongshu.com/spectrum/1040g0k031h3avpbd38005ojlrllk1i1jhn2krp0?imageView2/2/w/1080/format/jpg",
-                                "trace_id": "jp",
-                                "need_load_original_image": false
-                            },
-                            "link": "https://www.xiaohongshu.com/discovery/item/68183769000000002301d33a?share_from_user_hidden=true&type=normal",
-                            "title": "618抄作业！2025年养猫囤货清单来袭",
-                            "is_star": false,
-                            "block_private_msg": false,
-                            "show_wechat_tag": false,
-                            "function_entries": [
-                                {
-                                    "type": "image_download_all"
-                                },
-                                {
-                                    "type": "generate_image"
-                                },
-                                {
-                                    "type": "copy_link"
-                                },
-                                {
-                                    "type": "dislike"
-                                },
-                                {
-                                    "type": "report"
-                                }
-                            ],
-                            "guide_audited": true
-                        },
-                        "view_count": 0,
-                        "media_save_config": {
-                            "disable_save": false,
-                            "disable_watermark": false,
-                            "disable_weibo_cover": false
-                        },
-                        "video": {}
-                    }
-                ],
-                "model_type": "note"
+                "width": 1440,
+                "height": 1920,
+                "link": "http://ci.xiaohongshu.com/1040g00831klsu11c3600440pmo7384odgc8ah08?imageView2/2/w/1080/format/jpg"
             }
         ],
-        "message": null,
-        "recordTime": "2025-07-30T23:30:04.375784089"
+        "video": {
+            "width": 1080,
+            "height": 1920,
+            "link": "http://v.xiaohongshu.com/stream/1/110/258/01e88d8706b27ab9010370019868d901b0_258.mp4?sign=a4a412e1995f703423c5137c61da0ab9&t=68961f00"
+        },
+        "createDate": "2025-08-02",
+        "author": {
+            "nickname": "高露LuLu",
+            "userId": "566ace34cb35fb6e7742130d",
+            "userSImage": "https://sns-avatar-qc.xhscdn.com/avatar/5e5b82029febf40001c17e49.jpg?imageView2/2/w/80/format/jpg"
+        },
+        "noteId": "688d87070000000025024af9",
+        "likeNum": "638",
+        "favNum": "66",
+        "cmtNum": "59"
     }
 }

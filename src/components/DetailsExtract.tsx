@@ -119,7 +119,7 @@ const DetailsExtract: React.FC<ExtractTypeProps> = (props) => {
         type: 'textarea' as const,
         name: 'url',
         label: '详情页面链接',
-        tooltip: '每个链接4积分，实际扣费会按照链接数量计算',
+        tooltip: '积分价格前往官网查看',
         placeholder: '请输入详情页面链接，一行一个：\nhttps://example.com/post/1\nhttps://example.com/post/2\nhttps://example.com/post/3',
         rows: 6,
         required: true,
